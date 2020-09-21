@@ -10,6 +10,8 @@ body {
 .main-header {
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     background: #2ddf5c;
     padding: 8px 16px;
     z-index: 1;
@@ -46,8 +48,8 @@ body {
 }
 
 .main-nav__item a {
-    color: #0e4f1f;
     text-decoration: none;
+    color: #0e4f1f;
     font-weight: bold;
     padding: 3px 0;
 }
@@ -101,7 +103,7 @@ body {
 }
 
 .button {
-    background-color: #0e4f1f;
+    background: #0e4f1f;
     color: white;
     font: inherit;
     border: 1.5px solid #0e4f1f;
@@ -119,8 +121,4 @@ body {
 
 .button:focus {
     outline: none;
-}
-
-.clearfix {
-    clear: both;
 }
