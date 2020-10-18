@@ -1,7 +1,7 @@
 const backdrop = document.querySelector('.backdrop');
 const modal = document.querySelector('.modal');
 const selectPlanButtons = document.querySelectorAll('.plan button');
-const noButton = document.querySelector('.modal__action--negative');
+const modalNoButton = document.querySelector('.modal__action--negative');
 const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
 
@@ -14,7 +14,9 @@ selectPlanButtons.forEach(btn => {
 
 const closeModal = () => {
     backdrop.classList.remove('open');
-    modal.classList.remove('open');
+    if(modal) {
+        modal.classList.remove('open');
+    }
 }
 
 backdrop.addEventListener('click', () => {
@@ -22,7 +24,9 @@ backdrop.addEventListener('click', () => {
     closeModal();
 });
 
-noButton.addEventListener('click', closeModal);
+if(modalNoButton) {
+    modalNoButton.addEventListener('click', closeModal);
+}
 
 toggleButton.addEventListener('click', () => {
     backdrop.classList.add('open');
