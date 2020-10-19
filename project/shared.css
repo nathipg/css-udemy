@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+main {
+    min-height: calc(100vh - 3.5rem - 8rem);
+    margin-top: 3.5rem;
+}
+
 .backdrop {
     position: fixed;
     display: none;
@@ -67,7 +72,7 @@ body::-webkit-scrollbar {
     font-weight: bold;
     font-size: 1.37rem;
     display: inline-block;
-    height: 1.88rem;
+    height: 2.5rem;
     vertical-align: middle;
 }
 
