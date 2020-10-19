@@ -24,6 +24,20 @@ main {
     width: 100%;
 }
 
+.signup-form input,
+.signup-form select {
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    outline: none;
+    background: #d8f3df;
+    border-color: #2ddf5c;
+}
+
 .signup-form input[id*="terms"],
 .signup-form input[id*="terms"] + label {
     display: inline-block;
