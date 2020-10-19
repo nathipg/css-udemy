@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 }
 
 .main-nav {
-    display: inline-block;
+    display: none;
     text-align: right;
     width: calc(100% - 122px);
     vertical-align: middle;
@@ -138,8 +138,8 @@ body::-webkit-scrollbar {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    display: block;
+    margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -252,4 +252,19 @@ body::-webkit-scrollbar {
 
 .open {
     display: block;
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: inline-block;
+    }
+
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
