@@ -21,10 +21,11 @@ body {
   border: 5px solid black;
   display: flex;
   /*flex-flow: row wrap;*/
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center; /* Cross Axis */
   justify-content: center; /* Main Axis */
+  align-content: center;
 }
 
 .item-1 {
