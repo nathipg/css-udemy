@@ -60,17 +60,16 @@ main {
   .testimonial {
     margin: 3rem auto;
     max-width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .testimonial__image-container {
     width: 65%;
-    display: inline-block;
-    vertical-align: middle;
   }
 
   .testimonial__info {
-    display: inline-block;
-    vertical-align: middle;
     width: 30%;
   }
 }
