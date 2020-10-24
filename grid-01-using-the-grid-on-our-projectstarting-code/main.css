@@ -12,6 +12,8 @@
         "header header header header"
         ". . main main"
         "footer footer footer footer";
+        justify-items: stretch;
+        align-items: stretch;
 }
 
 .el1 {
