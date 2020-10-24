@@ -32,7 +32,10 @@ const closeModal = () => {
 }
 
 backdrop.addEventListener('click', () => {
-    mobileNav.classList.remove('open');
+    mobileNav.style.display = 'none';
+    setTimeout(() => {
+        mobileNav.classList.remove('open');
+    }, 10);
     closeModal();
 });
 
@@ -45,5 +48,8 @@ toggleButton.addEventListener('click', () => {
     setTimeout(() => {
         backdrop.classList.add('open');
     }, 10);
-    mobileNav.classList.add('open');
+    mobileNav.style.display = 'block';
+    setTimeout(() => {
+        mobileNav.classList.add('open');
+    }, 10);
 });
