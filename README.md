@@ -1,0 +1,1 @@
+CSS classes name pattern: http://getbem.com/introduction/
