@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,eAAgB;EACd,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,MAAM;EACjB,KAAK,ECJC,OAAO",
+"sources": ["typography.scss","_variable.scss"],
+"names": [],
+"file": "typography.css"
+}
