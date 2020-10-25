@@ -124,7 +124,7 @@ body::-webkit-scrollbar {
 }
 
 .main-nav__item--cta {
-    animation: wiggle 200ms 1s 2 alternate;
+    animation: wiggle 400ms 1s 2 ease-out;
 }
 
 .main-nav__item--cta a,
@@ -314,11 +314,15 @@ body::-webkit-scrollbar {
 }
 
 @keyframes wiggle {
-    from {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    50% {
         transform: rotateZ(-10deg);
     }
 
-    to {
+    100% {
         transform: rotateZ(10deg);
     }
 }
